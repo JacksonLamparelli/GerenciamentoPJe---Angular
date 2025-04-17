@@ -1,0 +1,16 @@
+div#painel {
+  display: flex;
+  flex-direction: row;
+}
+
+div#1 {
+  flex-direction: row;
+}
+
+canvas#myChart {
+  width: 500px;
+}
+
+div#graficoAcervo {
+  width: 1000px;
+}

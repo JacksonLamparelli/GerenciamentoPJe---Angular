@@ -1,0 +1,37 @@
+<input type="file" (change)="onFileChange($event)" />
+<div id="painel">
+  <div id="1">
+    <p>Total de processos: {{ acervo.length }}</p>
+    <br />
+    SITUAÇÃO:
+    <br />
+    <br />
+    <p>Em andamento: {{ andamento.length }}</p>
+
+    <p>Julgados: {{ julgado.length }}</p>
+
+    <p>Em Instância Superior: {{ instanciaSuperior.length }}</p>
+
+    <p>Sobrestados: {{ sobrestado.length }}</p>
+
+    <p>Inquéritos Policiais (não relatados): {{ inquerito.length }}</p>
+
+    <p>Inquéritos Policiais (relatados): {{ relatado.length }}</p>
+
+    <p>Digitalizado: {{ digitalizado.length }}</p>
+
+    <p>CEHAS: {{ hastas.length }}</p>
+
+    <p>Solicitado atendimento em plantão judiciário: {{ plantao.length }}</p>
+  </div>
+  <div>
+    <br />
+    <br />
+    <P>FEITOS CÍVEIS: {{ acervo.length - criminais.length }}</P>
+    <p>FEITOS CRIMINAIS: {{ criminais.length }}</p>
+  </div>
+
+  <div id="graficoAcervo">
+    <canvas id="myChart"></canvas>
+  </div>
+</div>
